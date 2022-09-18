@@ -3,3 +3,14 @@
   INISIALIZE : 
   task,
   date,
+
+PROCEDURE
+  PRINT "Tambahkan Hal Yang Harus Dilakukan"
+  READ AND WRITE "Tambahkan Kegiatan" FROM variable "task" with string
+  READ AND WRITE "Masukkan Tanggal Kegiatan" FROM variable "date" with timestamp
+
+  READ "SUBMIT"
+
+  PRINT "Kegiatan Yang Harus Dilakukan"
+  STORE "task" TO "Kegiatan Yang Harus Dilakukan" FROM "Tambahkan Kegiatan"
+  STORE "date" TO "Kegiatan Yang Harus Dilakukan" FROM "Masukkan Tanggal Kegiatan"  
