@@ -1,0 +1,42 @@
+// pseudocode ToDo-List 
+
+  INISIALIZE : 
+  task,
+  date,
+
+PROCEDURE
+  PRINT "Tambahkan Hal Yang Harus Dilakukan"
+  READ AND WRITE "Tambahkan Kegiatan" FROM variable "task" with string
+  READ AND WRITE "Masukkan Tanggal Kegiatan" FROM variable "date" with timestamp
+
+  READ "SUBMIT"
+
+  PRINT "Kegiatan Yang Harus Dilakukan"
+  STORE "task" TO "Kegiatan Yang Harus Dilakukan" FROM "Tambahkan Kegiatan"
+  STORE "date" TO "Kegiatan Yang Harus Dilakukan" FROM "Masukkan Tanggal Kegiatan" 
+
+  
+  IF "Kegiatan Yang Harus Dilakukan" isComplited
+
+      PRINT "task" TO "Kegiatan Yang Sudah Dilakukan"
+      STORE "task" FROM "Kegiatan Yang Harus Dilakukan"
+  ELSE 
+      PRINT "task" TO "Kegiatan Yang Harus Dilakukan"
+
+    THEN
+
+  PRINT "Kegiatan Yang Sudah Dilakukan"
+
+  IF "task" isRemoved
+      isRemoved "task" FROM "Yang Sudah Dilakukan"
+  ELSE
+      PRINT "task" TO "Kegiatan Yang Sudah Dilakukan"
+
+    THEN
+
+  IF  "Kegiatan Yang Sudah Dilakukan" isRepeat
+      PRINT "task" FROM "Kegiatan Yang Sudah Dilakukan" TO "Kegiatan Yang Harus Dilakukan"
+  ELSE
+      PRINT "task" TO "Kegiatan Yang Sudah Dilakukan"
+      
+END PROCEDURE
