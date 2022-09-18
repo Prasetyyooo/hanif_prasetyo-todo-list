@@ -38,3 +38,5 @@ PROCEDURE
       PRINT "task" FROM "Kegiatan Yang Sudah Dilakukan" TO "Kegiatan Yang Harus Dilakukan"
   ELSE
       PRINT "task" TO "Kegiatan Yang Sudah Dilakukan"
+      
+END PROCEDURE
